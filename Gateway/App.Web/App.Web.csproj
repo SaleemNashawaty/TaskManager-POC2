@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+        <AssemblyName>TaskManager.Server.App.Web</AssemblyName>
+    <RootNamespace>TaskManager.Server.App.Web</RootNamespace> 
+    <Nullable>enable</Nullable>
+    
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="GraphQL.Server.Ui.Voyager" Version="7.6.0" />
+
+    <PackageReference Include="HotChocolate" Version="13.6.0-preview.23" />
+
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.6.0-preview.23" />
+
+    <PackageReference Include="HotChocolate.Data" Version="13.6.0-preview.23" />
+
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.6.0-preview.23" />
+
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
