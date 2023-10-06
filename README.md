@@ -1,5 +1,10 @@
 # Task Manager PoC2
-The Task Manager serves as a proof of concept (PoC) for the implementation of a GraphQL server API and a GraphQL client. This PoC comprises three primary components:
+The Task Manager serves as a proof of concept (PoC) for the implementation of a GraphQL server API and a GraphQL client. 
+
+![image](https://github.com/SaleemNashawaty/TaskManager-POC2/assets/32152547/da9266dd-7a13-42ea-a7a3-bdb558368fe7)
+
+
+This PoC comprises three primary components:
 
 Server: This component encompasses the hosting application service for the GraphQL API, GraphQL schema (consisting of Queries, Mutations, and Subscribers), as well as the database schema and DBContext.
 ![image](https://github.com/SaleemNashawaty/TaskManager-POC2/assets/32152547/eca383bd-4477-4b79-97a8-9b8a5c8ef775)
