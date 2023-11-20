@@ -1,0 +1,30 @@
+<div class="m-4">
+  <div class="row">
+    <div class="col-12">
+      <div class="p-1">
+        <h3>Task List</h3>
+      </div>
+      <kendo-button (click)="newTask()" themeColor="success" class="mt-1 mb-1">
+        <span class="k-icon k-i-plus-outline"></span> Add New Task
+      </kendo-button>
+      <kendo-grid [sortable]="true" [data]="tasksList" [height]="600" [resizable]="true">
+        <kendo-grid-column field="Id" title="ID"></kendo-grid-column>
+        <kendo-grid-column field="Title" title="Title"></kendo-grid-column>
+        <kendo-grid-column field="Description" title="Description"> </kendo-grid-column>
+        <kendo-grid-column field="AssignedToName" title="AssignTo"> </kendo-grid-column>
+        <kendo-grid-column field="CreatedByName" title="CreatedBy"> </kendo-grid-column>
+        <kendo-grid-column field="Status" title="Status"> </kendo-grid-column>
+        <kendo-grid-column field="DueDate" title="Due Date"> 
+          <ng-template kendoGridCellTemplate let-dataItem>
+            {{dataItem.DueDate | date: 'MM/dd/yyyy'}}
+        </ng-template>
+        </kendo-grid-column>
+        <kendo-grid-column title="Date Created" >
+          <ng-template kendoGridCellTemplate let-dataItem>
+            {{dataItem.DateCreated | date: 'MM/dd/yyyy'}}
+        </ng-template>
+       </kendo-grid-column>
+      </kendo-grid>
+    </div>
+  </div>
+</div>

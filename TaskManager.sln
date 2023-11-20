@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bus", "Client\Bus\Bus.cspro
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Gateway\Database\Database.sqlproj", "{712687B0-8AD5-43A8-8BC6-3068D78CEBE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.UI", "Client\App.UI\App.UI.csproj", "{A9137050-BDC1-4C3C-B921-685FEF4E525B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{712687B0-8AD5-43A8-8BC6-3068D78CEBE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{712687B0-8AD5-43A8-8BC6-3068D78CEBE0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{712687B0-8AD5-43A8-8BC6-3068D78CEBE0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A9137050-BDC1-4C3C-B921-685FEF4E525B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9137050-BDC1-4C3C-B921-685FEF4E525B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9137050-BDC1-4C3C-B921-685FEF4E525B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9137050-BDC1-4C3C-B921-685FEF4E525B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +154,7 @@ Global
 		{ED39520C-1E85-4447-9EB3-0251A21F323E} = {1939CC27-038E-4E6C-A77C-EAD44B605C7B}
 		{7D271F67-ECAF-4038-8FA3-8BBAA1509838} = {1939CC27-038E-4E6C-A77C-EAD44B605C7B}
 		{712687B0-8AD5-43A8-8BC6-3068D78CEBE0} = {1ECCD197-0C96-4BD7-BF00-E561DF39AD79}
+		{A9137050-BDC1-4C3C-B921-685FEF4E525B} = {1939CC27-038E-4E6C-A77C-EAD44B605C7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DAB0A00D-F7EF-4143-B0F5-97915F26492F}

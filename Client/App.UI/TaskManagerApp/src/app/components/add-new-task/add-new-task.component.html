@@ -1,0 +1,34 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Add New Task</h4>
+  <button type="button" class="close" aria-label="Close" (click)="close()">
+    <span aria-hidden="false">×</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form class="k-form k-form-md" [formGroup]="addTaskForm">
+    <kendo-formfield>
+      <kendo-label [for]="title" text="Title"></kendo-label>
+      <kendo-textbox formControlName="Title" [clearButton]="true" #title required></kendo-textbox>
+      <kendo-formerror>Error: Task Title is required</kendo-formerror>
+    </kendo-formfield>
+    <kendo-formfield>
+      <kendo-label [for]="desc" text="Description"></kendo-label>
+      <kendo-textarea formControlName="Description" #desc></kendo-textarea>
+    </kendo-formfield>
+    <kendo-formfield>
+      <kendo-label [for]="duedate" text="Due Date"></kendo-label>
+      <kendo-datepicker formControlName="DueDate" #duedate></kendo-datepicker>
+    </kendo-formfield>
+    <kendo-formfield>
+      <kendo-label [for]="assignee" text="Assignee"></kendo-label>
+      <kendo-combobox #assignee formControlName="Assignee" [data]="usersList" textField="Name" valueField="Id"
+        [valuePrimitive]="true">
+      </kendo-combobox>
+      <kendo-formerror>Error: Assignee is required</kendo-formerror>
+    </kendo-formfield>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" (click)="close()" class="btn btn-outline-danger">Cancel</button>
+  <button type="button" (click)="save()" class="btn btn-outline-success">Save</button>
+</div>
